@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #18191a;
+    color: #e4e6eb;
+    min-height: 100vh;
+}
+
+.mode {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    background: transparent;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.hero-borders {
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+
+}
+
+.no {
+    pointer-events: none;
+}
+
+small {
+    font-size: 9px;
+}
+
+.tabs-border {
+    border-top: 0.3px solid rgba(149, 148, 148, 0.362);
+    border-bottom: 0.3px solid rgba(149, 148, 148, 0.362);
+    ;
+}
+
+/* .tabs-border button:focus {
+    border-bottom: 2px solid #1877f2;
+
+} */
+
+/* Light mode styles */
+html.light body {
+    background-color: #f0f2f5 !important;
+    color: #050505 !important;
+}
+
+html.light .fb-card {
+    background-color: #ffffff !important;
+    border-color: #e4e6eb !important;
+}
+
+html.light .fb-tab {
+    color: #65676b !important;
+}
+
+html.light .fb-tab:hover {
+    background-color: #f0f2f5 !important;
+    color: #1877f2 !important;
+    outline: none;
+    border-bottom: 2px solid #1877f2 !important;
+    outline-offset: -2px !important;
+    border-radius: 0px;
+}
+
+html.light .fb-tab:focus {
+    background-color: #f0f2f5 !important;
+    color: #1877f2 !important;
+    outline: none;
+    border-bottom: 2px solid #1877f2 !important;
+    outline-offset: -2px !important;
+    border-radius: 0px;
+}
+
+html.light .fb-tab.active {
+    color: #1877f2 !important;
+    border-bottom: 2px solid #1877f2 !important;
+}
+
+html.light .fb-tab.active:hover {
+    background-color: transparent !important;
+    border-bottom: 2px solid #1877f2 !important;
+}
+
+html.light .skill-badge {
+    background-color: #f0f2f5 !important;
+    color: #050505 !important;
+}
+
+html.light .timeline-line {
+    background-color: #e4e6eb !important;
+}
+
+html.light .border-t {
+    border-color: #e4e6eb !important;
+}
+
+/* Header light mode */
+html.light .bg-fb-darkCard {
+    background-color: #ffffff !important;
+}
+
+html.light .border-fb-darkBorder {
+    border-color: #e4e6eb !important;
+}
+
+html.light .hover\:bg-fb-darkHover:hover {
+    background-color: #f0f2f5 !important;
+}
+
+/* Text colors for light mode */
+html.light .text-fb-lightText {
+    color: #050505 !important;
+}
+
+html.light .text-fb-secondaryText {
+    color: #65676b !important;
+}
+
+html.light h1,
+html.light h2,
+html.light h3,
+html.light .font-bold,
+html.light .font-semibold {
+    color: #050505 !important;
+}
+
+html.light p,
+html.light span,
+html.light div {
+    color: #050505 !important;
+}
+
+html.light .text-fb-blue {
+    color: #1877f2 !important;
+}
+
+/* Button styling for light mode */
+html.light .fb-button {
+    background-color: #e4e6eb !important;
+    color: #050505 !important;
+}
+
+html.light .fb-button:hover {
+    background-color: #d8dadf !important;
+}
+
+html.light .bg-fb-blue {
+    background-color: #1877f2 !important;
+    color: #ffffff !important;
+}
+
+html.light .bg-fb-blue:hover {
+    background-color: #166fe5 !important;
+}
+
+html.light .bg-fb-darkHover {
+    background-color: #f0f2f5 !important;
+    color: #050505 !important;
+}
+
+html.light .bg-fb-darkHover:hover {
+    background-color: #e4e6eb !important;
+}
+
+html.light .text-white {
+    color: #ffffff !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #242526;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3a3b3c;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4e4f50;
+}
+
+.fb-button {
+    @apply px-4 py-2 rounded-md font-semibold text-sm transition-all duration-200;
+}
+
+.fb-card {
+    @apply bg-fb-darkCard rounded-lg border border-fb-darkBorder;
+}
+
+.fb-tab {
+    @apply text-fb-secondaryText font-semibold cursor-pointer relative transition-colors;
+    padding: 5px;
+}
+
+.fb-tab:focus {
+    border-bottom: 2px solid #1877f2 !important;
+    border-radius: 0px !important;
+}
+
+.fb-tab:hover {
+    @apply bg-fb-darkHover rounded-lg;
+}
+
+.fb-tab.active {
+    @apply text-fb-blue;
+}
+
+.fb-tab.active::after {
+    @apply absolute bottom-0 left-0 right-0 h-[3px] bg-fb-blue rounded-t-sm;
+}
+
+.skill-badge {
+    @apply px-3 py-1.5 bg-fb-darkHover text-fb-lightText rounded-full text-sm font-medium;
+}
+
+.timeline-line {
+    @apply absolute left-[19px] top-10 bottom-0 w-0.5 bg-fb-darkBorder;
+}
+
+/* Light mode overrides */
+.light .fb-card {
+    background-color: #ffffff !important;
+    border-color: #e4e6eb !important;
+}
+
+.light .fb-tab {
+    color: #65676b !important;
+}
+
+.light .fb-tab:hover {
+    background-color: #f0f2f5 !important;
+}
+
+.light .skill-badge {
+    background-color: #f0f2f5 !important;
+    color: #050505 !important;
+}
+
+.light .timeline-line {
+    background-color: #e4e6eb !important;
+}
+
+.light .border-t {
+    border-color: #e4e6eb !important;
+}
