@@ -30,14 +30,14 @@ function ProfileHero({ activeTab, setActiveTab }) {
                         <button
                             onClick={toggleTheme}
                             id='mode'
-                            className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isDark ? 'hover:bg-fb-darkHover' : 'hover:bg-fb-lightHover'
+                            className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isDark ? 'bg-fb-darkHover hover:bg-fb-darkBorder' : 'bg-fb-lightHover hover:bg-fb-lightBorder'
                                 }`}
                             aria-label="Toggle theme"
                         >
                             {isDark ? (
-                                <Moon className="w-5 h-5 text-fb-darkText" />
-                        ) : (
                                 <Sun className="w-5 h-5 text-fb-lightText" />
+                            ) : (
+                                <Moon className="w-5 h-5 text-fb-darkText" />
                             )}
                         </button>
                         <small >{isDark ? ' Dark' : ' Light'}</small>
@@ -107,6 +107,3 @@ function ProfileHero({ activeTab, setActiveTab }) {
 }
 
 export default ProfileHero;
-
-
-
