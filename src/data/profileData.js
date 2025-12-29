@@ -1,7 +1,7 @@
 export const profileData = {
     name: "Ibrahim Elnaeem",
     bio: "Software Developer",
-    cover: "https://scontent.fauh1-1.fna.fbcdn.net/v/t39.30808-6/512660200_23883891004625389_1476955342895690707_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=sgsCfZQBiUAQ7kNvwFgwD4s&_nc_oc=AdnGBS6f54yHq0o9KQ1Ji5u8vn2ymIfjk0obMD1Cokjuy5fpqA3Gocr0YiWsD9nwC0Of3yqOTg_TzNlFnkq_BQo1&_nc_zt=23&_nc_ht=scontent.fauh1-1.fna&_nc_gid=0FZ_d5TcoAfOkg3bV4f8BA&oh=00_AfkmV4O2qqWDdwwgvEBkqvOJy7dnpXgaai5aDbopfxFqzA&oe=6951AABE",
+    cover: "https://i.imgur.com/KF7VsLP.jpeg",
     avatar: "https://i.imgur.com/4PF3R9p.png",
     location: "Abu Dhabi, UAE",
     email: "ibra.him51592@gmail.com",
@@ -148,4 +148,5 @@ export const resumeData = {
         }
     ]
 };
+
 
