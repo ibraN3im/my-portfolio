@@ -1,7 +1,7 @@
 export const profileData = {
     name: "Ibrahim Elnaeem",
     bio: "Software Developer",
-    cover: "https://falconspace.ru/uploads/rs/articlebodyimage/133/kompyuter-1.jpg",
+    cover: "https://i.imgur.com/KF7VsLP.jpeg",
     avatar: "https://i.imgur.com/4PF3R9p.png",
     location: "Abu Dhabi, UAE",
     email: "ibra.him51592@gmail.com",
@@ -148,6 +148,7 @@ export const resumeData = {
         }
     ]
 };
+
 
 
 
