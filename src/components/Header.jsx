@@ -19,7 +19,7 @@ function Header() {
                 <div className="flex items-center gap-2">
                     <button
                         onClick={toggleTheme}
-                        className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isDark ? 'hover:bg-fb-darkHover' : 'hover:bg-fb-lightHover'
+                        className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isDark ? 'bg-fb-darkHover hover:bg-fb-darkBorder' : 'bg-fb-lightHover hover:bg-fb-lightBorder'
                             }`}
                         aria-label="Toggle theme"
                     >
