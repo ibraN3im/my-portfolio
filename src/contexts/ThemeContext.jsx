@@ -11,7 +11,7 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider = ({ children }) => {
-    const [isDark, setIsDark] = useState(false); // Start with light mode
+    const [isDark, setIsDark] = useState(true); // Start with dark mode
 
     const toggleTheme = () => {
         setIsDark(!isDark);
@@ -31,9 +31,9 @@ export const ThemeProvider = ({ children }) => {
     };
 
     useEffect(() => {
-        // Initialize with light mode
-        document.documentElement.classList.add('light');
-        document.body.classList.add('bg-fb-whiteBg');
+        // Initialize with dark mode
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('bg-fb-dark');
     }, []);
 
     return (
