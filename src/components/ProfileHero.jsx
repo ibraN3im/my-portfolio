@@ -35,9 +35,11 @@ function ProfileHero({ activeTab, setActiveTab }) {
                             aria-label="Toggle theme"
                         >
                             {isDark ? (
-                                <Sun className="w-5 h-5 text-fb-lightText" />
-                            ) : (
                                 <Moon className="w-5 h-5 text-fb-darkText" />
+
+                        ) : (
+                                                            <Sun className="w-5 h-5 text-fb-lightText" />
+
                             )}
                         </button>
                         <small >{isDark ? ' Dark' : ' Light'}</small>
@@ -107,4 +109,5 @@ function ProfileHero({ activeTab, setActiveTab }) {
 }
 
 export default ProfileHero;
+
 
