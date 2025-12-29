@@ -40,7 +40,7 @@ function ProfileHero({ activeTab, setActiveTab }) {
                                 <Moon className="w-5 h-5 text-fb-darkText" />
                             )}
                         </button>
-                        <small >{isDark ? 'Dark' : 'Light'} Mode</small>
+                        <small >{isDark ? ' Dark' : ' Light'}</small>
                     </div>
                 </div>
                 <div className="h-[200px] md:h-[350px] overflow-hidden hero-borders">
@@ -107,3 +107,4 @@ function ProfileHero({ activeTab, setActiveTab }) {
 }
 
 export default ProfileHero;
+
