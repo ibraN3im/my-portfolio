@@ -33,6 +33,14 @@ body {
 
 }
 
+.post-info {
+    flex-direction: column;
+}
+
+.post-image {
+    width: 100%;
+}
+
 .no {
     pointer-events: none;
 }
