@@ -36,10 +36,8 @@ function ProfileHero({ activeTab, setActiveTab }) {
                         >
                             {isDark ? (
                                 <Moon className="w-5 h-5 text-fb-darkText" />
-
                         ) : (
-                                                            <Sun className="w-5 h-5 text-fb-lightText" />
-
+                                <Sun className="w-5 h-5 text-fb-lightText" />
                             )}
                         </button>
                         <small >{isDark ? ' Dark' : ' Light'}</small>
@@ -109,5 +107,6 @@ function ProfileHero({ activeTab, setActiveTab }) {
 }
 
 export default ProfileHero;
+
 
 
