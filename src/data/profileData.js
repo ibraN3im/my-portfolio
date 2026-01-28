@@ -85,7 +85,7 @@ export const projectsData = [
         description: "E-commerce website for a local business.",
         image: "../screens/homeP.png",
         tech: ["Full-stack", "E-commerce", "Healthcare", "Fintech", "Responsive Design", "User-Friendly Interface", "Secure Transactions", "Payment Gateway Integration", "Order Tracking", "Customer Reviews", "Admin Dashboard", "Mobile Optimization", "Cross-Browser Compatibility", "Performance Optimization", "Scalability", "Reliability", "Security", "Usability", "Accessibility", "Collaboration Tools", "Project Management", "Task Scheduling", "Resource Allocation", "Reporting", "Analytics", "Dashboard", "Visualization", "Integration", "API Development", "Testing", "Deployment", "Maintenance", "Support"],
-        liveUrl: "https://afiya-zone.onrender.com/",
+        liveUrl: "https://afiyazone.vercel.app/",
         githubUrl: ""
     },
     {
@@ -148,6 +148,7 @@ export const resumeData = {
         }
     ]
 };
+
 
 
 
